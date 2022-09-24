@@ -8,8 +8,11 @@
   <body>
     <style>
       body {
-        background-image: url("./assets/bg4.jpg");
-        background: cover;
+        background: url("./assets/bg4.jpeg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
     </style>
 
@@ -31,10 +34,12 @@
                       <div class="">
                         <a
                           class="flex mr-[10rem] py-5 left-5"
-                          href="./index.html"
+                          href="./home.html"
                         >
                           <img
-                            src="https://img.icons8.com/ios-glyphs/30/000000/cloud.png"
+                          src="assets\logo.png"
+                          width="50" 
+                          height="50"
                           />
                         </a>
                       </div>
@@ -43,36 +48,36 @@
                     <div
                       class="hidden md:flex font-regular font-mono text-lg items-center space-x-3"
                     >
-                    <a
-                    href="./index.html"
-                    class="py-4 px-2 text-black hover:text-teal-800 transition duration-300"
-                  >
-                    Home
-                  </a>
                       <a
-                        href="./ps.html"
+                        href="./aboutus.html"
                         class="py-4 px-2 text-black hover:text-teal-800"
                       >
-                        Problem Statement
+                        About Us
                       </a>
                       <a
-                        href="./backend.html"
+                        href="./ourinnovation.html"
                         class="py-4 px-2 text-black hover:text-teal-800 transition duration-300"
                       >
-                        Our Solution
+                         Our Innovation 
                       </a>
                       <a
-                        href="./info.html"
+                        href="./workingprocess.html"
                         class="py-4 px-2 text-black hover:text-teal-800 transition duration-300"
                       >
-                      Description
+                      Working Process
                       </a>
                       
                       <a
-                        href="./info2.html"
+                        href="./businessmodel.html"
                         class="py-4 px-2 text-black hover:text-teal-800"
                       >
-                        Working Process
+                        Business Model
+                      </a>
+                      <a
+                        href="./valueproposition.html"
+                        class="py-4 px-2 text-black hover:text-teal-800"
+                      >
+                        Value Proposition
                       </a>
                       <a
                         href="./team.html"
@@ -81,7 +86,6 @@
                         Team
                       </a>
                     </div>
-
                     <div class="md:hidden flex items-center">
                       <button class="outline-none mobile-menu-button">
                         <svg
@@ -153,22 +157,38 @@
     
                     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                         <!--Card 1-->
-                        <div class="rounded overflow-hidden shadow-lg py-3 transition duration-200 hover:bg-purple-200 ">
-                            <img class="ml-5 rounded-full h-32" src="./assets/drj.png" alt="Dr. Jayanthi
-                            ">
-                            <div class="px-6">
-                              <div class="font-bold text-xl mb-2">Dr. Jayanthi
-                              </div>
-                              <p class="text-gray-700 text-base">
-                                Biomedical Engineer 
-
-                              </p>
-                            </div>
-                            <div class="px-6 pt-4 pb-2">
-                              
-                            </div>
-                        </div>
+                        <div class="rounded overflow-hidden shadow-lg py-3  hover:bg-purple-200 transition duration-200 ">
+                          <img class="ml-5 h-32 rounded-full " src="./assets/dre.png" alt="Dr. Emilda 
+                          ">
+                          <div class="px-6">
+                            <div class="font-bold text-xl mb-2">Dr. Emilda</div>
+                            <p class="text-gray-700 text-base">
+                              Clinical Psychologist 
+                            </p>
+                          </div>
+                          <div class="px-6 pt-4 pb-2">
+                            
+                          </div>
+                      </div>
+                        
                         <!--Card 2-->
+                        
+                        <div class="rounded overflow-hidden shadow-lg py-3 transition duration-200 hover:bg-purple-200 ">
+                          <img class="ml-5 rounded-full h-32" src="./assets/drj.png" alt="Dr. Jayanthi
+                          ">
+                          <div class="px-6">
+                            <div class="font-bold text-xl mb-2">Dr. Jayanthi
+                            </div>
+                            <p class="text-gray-700 text-base">
+                              Biomedical Engineer 
+
+                            </p>
+                          </div>
+                          <div class="px-6 pt-4 pb-2">
+                            
+                          </div>
+                      </div>
+                        <!--Card 3-->
                         <div class="rounded overflow-hidden shadow-lg py-3  hover:bg-purple-200 transition duration-200">
                           <img class="ml-5 h-32 rounded-full " src="./assets/drs.png" alt="Dr. Sunitha
                           ">
@@ -181,21 +201,6 @@
                           <div class="px-6 pt-4 pb-2">
                             
                           </div>
-                        </div>
-                    
-                        <!--Card 3-->
-                        <div class="rounded overflow-hidden shadow-lg py-3  hover:bg-purple-200 transition duration-200 ">
-                            <img class="ml-5 h-32 rounded-full " src="./assets/dre.png" alt="Dr. Emilda 
-                            ">
-                            <div class="px-6">
-                              <div class="font-bold text-xl mb-2">Dr. Emilda</div>
-                              <p class="text-gray-700 text-base">
-                                Clinical psychologist 
-                              </p>
-                            </div>
-                            <div class="px-6 pt-4 pb-2">
-                              
-                            </div>
                         </div>
                           <!--Card 4-->
                         <div class="rounded overflow-hidden shadow-lg py-3  hover:bg-purple-200  transition duration-200">
@@ -255,6 +260,21 @@
           
         </div>
       </div>
+      <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #7fb859;
+          color: white;
+          text-align: right;
+        }
+        </style>
+        
+        <div class="footer">
+          <p>Sensory Relax Private LTD.</p>
+        </div>
     </section>
   </body>
 </html>
